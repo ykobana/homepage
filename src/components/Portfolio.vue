@@ -3,7 +3,7 @@
     <swiper :options="swiperOption">
       <swiper-slide v-for="(portfolio ,index) in portfolios" :key="index">
           <v-card wrap hover :href="portfolio.url">
-            <v-img :src="portfolio.src" height="200px" />
+            <v-img :src="portfolio.src" height="250px" />
             <v-card-title>
               <b>
                 <p class="card-title">{{ portfolio.title }}</p>
@@ -48,7 +48,7 @@ export default {
   data() {
     return {
       swiperOption: {
-        slidesPerView: 1,
+        slidesPerView: 3,
         spaceBetween: 30,
         freeMode: true,
         pagination: {
@@ -56,18 +56,18 @@ export default {
           clickable: true
         },
         breakpoints: {
-          640: {
+          480: {
+            slidesPerView: 1,
+            spaceBetween: 20,
+          },
+          780: {
             slidesPerView: 2,
             spaceBetween: 20,
           },
-          768: {
-            slidesPerView: 4,
+          850: {
+            slidesPerView: 3,
             spaceBetween: 40,
-          },
-          1024: {
-            slidesPerView: 5,
-            spaceBetween: 50,
-          },
+          }
         }
       },
       portfolios: [

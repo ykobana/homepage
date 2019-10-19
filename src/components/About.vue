@@ -2,28 +2,28 @@
   <v-layout wrap>
     <v-flex>
       <h1>
-        <code-greater-than class="icon" />使用する言語
+        <code-greater-than class="icon" />LANGUAGE
       </h1>
       <HorizontalBarChart />
       <h1>
-        <codepen-icon class="icon" />経験した技術
+        <codepen-icon class="icon" />SKILL
       </h1>
-      <p>AWS, Linux, Jenkins</p>
+      <p class="exp">AWS, Linux, Jenkins, JIRA, Redmine, Confluence, GitHub, SVN, Django, Google Test, Wireshark</p>
       <h1>
-        <DeveloperBoard class="icon" />ポートフォリオ
+        <DeveloperBoard class="icon" />PORTFOLIO
       </h1>
       <p>
         <Portfolio />
       </p>
       <h1>
-        <history class="icon" />経歴
+        <history class="icon" />HISTORY
       </h1>
       <ul>
         <li>2014: 修士課程</li>
         <li>2016: キヤノン株式会社入社</li>
       </ul>
       <h1>
-        <FileCertificate class="icon" />資格
+        <FileCertificate class="icon" />CERTIFICATION
       </h1>
       <ul>
         <li>応用情報技術者</li>
@@ -31,7 +31,7 @@
         <li>TOEIC 745点</li>
       </ul>
       <h1>
-        <Note class="icon" />論文
+        <Note class="icon" />THESIS
       </h1>
       <ul>
         <li v-for="(paper, index) in papers" :key="index">
@@ -48,6 +48,10 @@
 <style scoped>
 .icon {
   margin-right: 10px;
+}
+
+.exp {
+  font-size: 2em;
 }
 </style>
 

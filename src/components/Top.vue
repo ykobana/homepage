@@ -5,7 +5,7 @@
 
 <style scoped>
 #top {
-  height: 250px;
+  height: 200px;
   margin: 30px;
   background-size: contain;
   background-position: center;
